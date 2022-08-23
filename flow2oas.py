@@ -13,8 +13,6 @@ import json
 import os
 import sys
 import yaml
-import re
-import copy
 
 class Flow2OAS:
 	flow = None
