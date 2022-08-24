@@ -14,6 +14,8 @@ import os
 import sys
 import yaml
 
+VERSION='0.1.0'
+
 class Flow2OAS:
 	flow = None
 	oas = None
@@ -149,6 +151,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser( description='Convert a flow file to an OpenAPI Specification file.' )
 	parser.add_argument( 'flow', help='Flow file to convert' )
 	parser.add_argument( '-o', '--output', help='Output file name' )
+	parser.add_argument( '-v', '--version', action='version', version='%(prog)s ' + VERSION )
 
 	args = parser.parse_args()
 
